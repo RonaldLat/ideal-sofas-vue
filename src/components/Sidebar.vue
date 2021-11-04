@@ -24,7 +24,7 @@ export default {
       >
 
         <span v-if="item.subnav" class="flex items-center justify-between px-3 text-gray-100">
-        <div @click="item.open = !item.open" class="uppercase cursor-pointer">{{ item.title }}</div>
+        <div @click="item.open = !item.open" class="text-lg font-bold uppercase cursor-pointer font-damian">{{ item.title }}</div>
           <svg
             class="text-gray-100 cursor-pointer fill-current"
             width="32px"
