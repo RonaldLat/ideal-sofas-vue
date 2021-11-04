@@ -1,0 +1,31 @@
+[
+  {
+    "id": "1",
+    "name": "Bobby Study Desk",
+    "price": 19995,
+    "oldPrice": 39995,
+    "img": "bobby-study-desk.jpg"
+  },
+  {
+    "id": "2",
+    "name": "MAMBU Study Desk",
+    "price": 24995,
+    "oldPrice":null,
+    "img": "mambu-study-desk.jpg",
+    "offer": "lowprice.jpg"
+  },
+  {
+    "id": "3",
+    "name": "TEXAS Study Desk",
+    "price": 39995,
+    "oldPrice": 49995,
+    "img": "texas-study-desk.jpg"
+  },
+  {
+    "id": "4",
+    "name": "FRESNO Study Desk",
+    "price": 39995,
+    "oldPrice": 49995,
+    "img": "fresno-study-desk.jpg"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "title": "office",
+    "open": false,
+    "subnav": [
+      { "title": "conference tables"},
+      { "title": "executive desks"},
+      { "title": "sit up stand up desks"},
+      { "title": "executive storage cabinets"},
+      { "title": "reception counters"}
+    ]
+  },
+  {
+    "title": "home office",
+    "open": false,
+    "subnav": [
+      { "title": "children's study desk"},
+      { "title": "study desks"},
+      { "title": "gaming chairs"},
+      { "title": "safes"}
+    ]
+  },
+  {
+    "title": "living room",
+    "open": false,
+    "subnav": [
+      { "title": "sofas"},
+      { "title": "accent chairs"},
+      { "title": "rocking chairs"},
+      { "title": "sofa beds"}
+    ]
+  },
+  {
+    "title": "dining",
+    "open": false,
+    "subnav": [
+      { "title": "dining sets"},
+      { "title": "dining chairs"},
+      { "title": "buffet + curios"},
+      { "title": "antique furniture"},
+      { "title": "bar counter"}
+    ]
+  },
+  {
+    "title": "bedroom",
+    "open": false,
+    "subnav": [
+      { "title": "bedroom package"},
+      { "title": "king beds"},
+      { "title": "queen beds"},
+      { "title": "fabric beds"},
+      { "title": "sofa beds"},
+      { "title": "single beds"}
+    ]
+  }
+]

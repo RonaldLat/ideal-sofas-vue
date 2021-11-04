@@ -1,0 +1,61 @@
+{
+  "bedroomFurniture":{
+    "category": "Bedroom Furniture",
+    "items": [
+      {
+        "id": 1,
+        "name": "VITANDA Single Bed + Mattress",
+        "price": 29995.0,
+        "img": "imgurl"
+      },
+      {
+        "id": 1,
+        "name": "VITANDA Queen Bed + Mattress",
+        "price": 39995.0,
+        "img": "imgurl"
+      },
+      {
+        "id": 1,
+        "name": "VINCENZA KING PACKAGE - King Bed + 2 Nightstands + Dresser Mirror",
+        "price": 299990.0,
+        "img": "imgurl"
+      },
+      {
+        "id": 1,
+        "name": "VITANDA Single Bed + Mattress",
+        "price": 29995.0,
+        "img": "imgurl"
+      }
+    ]
+  },
+
+  "homeOffice":{
+    "category": "home office",
+    "items": [
+      {
+        "id": 1,
+        "name": "VITANDA Single Bed + Mattress",
+        "price": 29995.0,
+        "img": "imgurl"
+      },
+      {
+        "id": 1,
+        "name": "VITANDA Queen Bed + Mattress",
+        "price": 39995.0,
+        "img": "imgurl"
+      },
+      {
+        "id": 1,
+        "name": "VINCENZA KING PACKAGE - King Bed + 2 Nightstands + Dresser Mirror",
+        "price": 299990.0,
+        "img": "imgurl"
+      },
+      {
+        "id": 1,
+        "name": "VITANDA Single Bed + Mattress",
+        "price": 29995.0,
+        "img": "imgurl"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "About Us",
+    "link": "about-us"
+  },
+  {
+    "name": "Careers",
+    "link": "careers"
+  },
+  {
+    "name": "FAQs",
+    "link": "faqs"
+  },
+  {
+    "name": "Terms & Conditions",
+    "link": "tocs"
+  },
+  {
+    "name": "Privacy Policy",
+    "link": "privacy-policy"
+  },
+  {
+    "name": "Our Stores",
+    "link": "our-stores"
+  },
+  {
+    "name": "Contact Us",
+    "link": "contact-us"
+  }
+]

@@ -1,0 +1,55 @@
+<script>
+import Nav from "./components/Nav.vue";
+import Footer from "./components/Footer.vue";
+import Sidebar from "./components/Sidebar.vue";
+import Whatsapp from "./components/Whatsapp.vue"
+import { ref } from '@vue/reactivity';
+
+export default {
+
+components: { Nav, Footer, Sidebar, Whatsapp },
+  setup() {
+    let sidebarOpen = ref(true)
+    return {
+      sidebarOpen,
+    };
+  },
+};
+// This starter template is using Vue 3 <script setup> SFCs
+// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
+</script>
+
+<template>
+  <div class="relative w-screen max-w-full min-h-screen px-4 font-nunito">
+    <Nav />
+
+      <div
+        @click="sidebarOpen = !sidebarOpen"
+        class="absolute w-8 cursor-pointer top-4 right-2"
+      >
+        <span>
+          <svg
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            color="#000"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </span>
+      </div>
+
+<Whatsapp />
+    <Sidebar class="transition-transform duration-700 ease-in-out transform" :class="{ '-translate-x-full' :sidebarOpen }" />
+    <router-view />
+  </div>
+  <Footer />
+</template>
