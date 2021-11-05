@@ -75,14 +75,14 @@ export default {
           v-for="(item, index) in navigation"
           :key="'item' + index"
           class="py-2 bg-black"
+              @click="item.open = !item.open"
         >
           <span
             v-if="item.subnav"
             class="flex items-center justify-between px-3 text-gray-300"
           >
             <div
-              @click="item.open = !item.open"
-              class="text-lg font-bold tracking-widest uppercase cursor-pointer font-damian"
+              class="text-lg font-bold tracking-widest uppercase cursor-pointer font-nunito"
             >
               {{ item.title }}
             </div>
@@ -94,7 +94,6 @@ export default {
               viewBox="0 0 24 24"
               fill="currentColor"
               color="#000000"
-              @click="item.open = !item.open"
             >
               <path
                 fill-rule="evenodd"

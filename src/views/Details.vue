@@ -25,7 +25,7 @@ components:{ DetailsComp },
 </script>
 
 <template>
-  <div>
+  <div class="my-16 mb-24">
   <DetailsComp :productID="productID" :details="details"/>
   </div>
 </template>

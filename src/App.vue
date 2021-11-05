@@ -22,7 +22,7 @@ components: { Nav, Footer, Sidebar, Whatsapp },
 </script>
 
 <template>
-  <div class="relative w-screen max-w-full min-h-screen px-4 font-nunito">
+  <div class="relative w-full min-h-screen px-4 font-nunito">
     <Nav />
 
       <div
@@ -31,8 +31,8 @@ components: { Nav, Footer, Sidebar, Whatsapp },
       >
         <span>
           <svg
-            width="24"
-            height="24"
+            width="45"
+            height="45"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"

@@ -18,12 +18,12 @@ export default {
 
   <ul v-show="list.open" class="flex flex-col gap-1 pl-4 transition-all ">
     <router-link
-      to="homeOffice"
+      to="/homeOffice"
       v-for="(item, index) in list.subnav"
       :key="'item' + index"
       class="py-1 rounded-sm bg-gradient-to-r from-gray-700 via-gray-900 to-black"
     >
-      <span class="flex items-center justify-between px-2 text-gray-300 divide-x-2 ">
+      <span class="flex items-center justify-between px-2 tracking-widest text-gray-300 divide-x-2 font-nunito">
         <div class="uppercase" >{{ item.title }}</div>
         <svg
           v-if="item.subnav"

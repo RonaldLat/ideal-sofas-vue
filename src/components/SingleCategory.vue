@@ -27,7 +27,7 @@ export default {
 </script>
 <template>
   <div
-    class="inline-flex flex-wrap items-center justify-between w-full gap-2 my-3 "
+    class="inline-flex flex-wrap items-center justify-between w-full my-3 gap-2 "
   >
     <div class="flex items-center justify-between w-auto gap-2 ">
       <router-link to="/" class="flex items-center ">
@@ -48,7 +48,7 @@ export default {
       <router-link :to="activeCategory" class="capitalize">{{ displayName }} </router-link>
     </div>
 
-    <div class="flex items-center gap-1 px-3 py-2 bg-gray-300 border-gray-900 rounded">
+    <div class="flex items-center px-3 py-2 bg-gray-300 border-gray-900 rounded gap-1">
       <span> Sort by price low to high</span>
       <span
         >
@@ -58,7 +58,7 @@ export default {
   </div>
 
   <div
-    class="grid w-full gap-6 mt-3 bg-gray-100 gap-y-14 md:grid-cols-3 place-items-center"
+    class="w-full mt-3 bg-gray-100 grid gap-6 gap-y-14 md:grid-cols-3 place-items-center"
   >
     <ProductCard
       v-for="product in products"
