@@ -3,15 +3,17 @@ import Nav from "./components/Nav.vue";
 import Footer from "./components/Footer.vue";
 import Sidebar from "./components/Sidebar.vue";
 import Whatsapp from "./components/Whatsapp.vue"
-import { ref } from '@vue/reactivity';
+import { useStore } from 'vuex';
+import { computed } from '@vue/reactivity';
 
 export default {
 
 components: { Nav, Footer, Sidebar, Whatsapp },
   setup() {
-    let sidebarOpen = ref(true)
+    let store = useStore()
     return {
-      sidebarOpen,
+      sidebarOpen: ()=> store.commit('toggleSidebar'),
+      toggleSidebar: computed(()=> store.state.sidebarOpen)
     };
   },
 };
@@ -24,7 +26,7 @@ components: { Nav, Footer, Sidebar, Whatsapp },
     <Nav />
 
       <div
-        @click="sidebarOpen = !sidebarOpen"
+        @click="sidebarOpen"
         class="absolute w-8 cursor-pointer top-4 right-2"
       >
         <span>
@@ -48,7 +50,7 @@ components: { Nav, Footer, Sidebar, Whatsapp },
       </div>
 
 <Whatsapp />
-    <Sidebar class="transition-transform duration-700 ease-in-out transform" :class="{ '-translate-x-full' :sidebarOpen }" />
+    <Sidebar class="transition-transform duration-700 ease-in-out transform" :class="{ '-translate-x-full' :toggleSidebar }" />
     <router-view />
   </div>
   <Footer />

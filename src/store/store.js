@@ -17,7 +17,7 @@ export default createStore({
       categoryNames: categoryNames,
       activeCategory: null,
       navigation: navigation,
-      sidebarOpen: false,
+      sidebarOpen: true,
       cart: [],
       categories: [
         {
@@ -102,6 +102,9 @@ export default createStore({
   mutations:{
     updateActiveCategory(state, payload){
       state.activeCategory = payload
+    },
+    toggleSidebar(state){
+      state.sidebarOpen =! state.sidebarOpen
     }
   }
 

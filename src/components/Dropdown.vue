@@ -16,14 +16,15 @@ export default {
   leave-to-class="scale-0 "
   >
 
-  <ul v-show="list.open" class="flex flex-col gap-1 pl-4 transition-all bg-gray-900">
-    <li
+  <ul v-show="list.open" class="flex flex-col gap-1 pl-4 transition-all ">
+    <router-link
+      to="homeOffice"
       v-for="(item, index) in list.subnav"
       :key="'item' + index"
-      class="py-1 bg-gray-600 rounded-sm"
+      class="py-1 rounded-sm bg-gradient-to-r from-gray-700 via-gray-900 to-black"
     >
-      <span class="flex items-center justify-between px-2 text-gray-100">
-        <div class="capitalize" >{{ item.title }}</div>
+      <span class="flex items-center justify-between px-2 text-gray-300 divide-x-2 ">
+        <div class="uppercase" >{{ item.title }}</div>
         <svg
           v-if="item.subnav"
           class="text-gray-100 fill-current"
@@ -42,7 +43,7 @@ export default {
       </span>
 
       <Dropdown :list="item" v-if="item.subnav" class="pl-5" />
-    </li>
+    </router-link>
   </ul>
 
   </transition>

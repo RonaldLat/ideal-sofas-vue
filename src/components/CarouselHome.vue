@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full my-6 border-4 max-h-xl">
+  <div class="w-full my-6 max-h-xl">
     <swiper 
       class="w-full"
       :grabCursor="true"
