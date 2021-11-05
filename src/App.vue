@@ -27,12 +27,12 @@ components: { Nav, Footer, Sidebar, Whatsapp },
 
       <div
         @click="sidebarOpen"
-        class="absolute w-8 cursor-pointer top-4 right-2"
+        class="absolute w-8 cursor-pointer top-3 right-4"
       >
         <span>
           <svg
             width="45"
-            height="45"
+            height="40"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
